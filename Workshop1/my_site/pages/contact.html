@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Form</h1>
+    <nav>
+      <a href="../index.html">Home</a> |
+      <a href="courses.html">Courses</a> |
+      <a href="schedule.html">Schedule</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="hobbies.html">Hobbies</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" value="Santiago Aispur" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="degree">Degree Program:</label><br>
+      <input type="text" id="degree" name="degree" value="Computer Science"><br><br>
+
+      <label for="semester">Semester:</label><br>
+      <input type="number" id="semester" name="semester" value="7" min="1" max="10"><br><br>
+
+      <label for="reason">Reason for Contact:</label><br>
+      <select id="reason" name="reason">
+        <option value="cs-club">CS Club Collaboration</option>
+        <option value="academic">Academic / Project Query</option>
+        <option value="rockstar">Jam Session / Music</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="50"></textarea><br><br>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I accept the terms and conditions</label><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 — Yachay Tech</p>
+  </footer>
+</body>
+</html>
