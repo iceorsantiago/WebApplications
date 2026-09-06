@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago | Web Applications Workshop 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Santiago | Computer Science Student</h1>
+
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div>
+        <p class="eyebrow">Web Applications · Workshop 3</p>
+
+        <h2>Learning Web Development One Project at a Time</h2>
+
+        <p>
+          I am Santiago, a Computer Science student at Yachay Tech.
+          This webpage extends my previous university website by adding
+          jQuery interactivity, an image gallery, a popup modal, and form validation.
+        </p>
+
+        <button id="changeColorBtn" type="button">
+          Change Background Color
+        </button>
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section id="gallery">
+      <h2>Image Gallery</h2>
+
+      <p>
+        Some of the things that represent my life as a Computer Science student.
+        Click an image to enlarge it.
+      </p>
+
+      <div class="gallery-grid">
+        <img
+          class="gallery-image"
+          src="https://picsum.photos/seed/programming/800/550"
+          alt="Programming and technology"
+        >
+
+        <img
+          class="gallery-image"
+          src="https://picsum.photos/seed/university/800/550"
+          alt="University environment"
+        >
+
+        <img
+          class="gallery-image"
+          src="https://picsum.photos/seed/gaming/800/550"
+          alt="Gaming and technology"
+        >
+
+        <img
+          class="gallery-image"
+          src="https://picsum.photos/seed/fitness/800/550"
+          alt="Fitness and personal interests"
+        >
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <p>
+        Send me a message about Computer Science, academic projects,
+        collaboration, or technology.
+      </p>
+
+      <form id="contactForm" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          >
+          <small id="nameError" class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          >
+          <small id="emailError" class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here"
+          ></textarea>
+          <small id="messageError" class="error-message"></small>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="modal">
+    <button id="closeModal" class="modal-close" type="button">&times;</button>
+    <img id="modalImage" src="" alt="Enlarged gallery image">
+  </div>
+
+  <footer>
+    <p>&copy; 2026 — Santiago | Yachay Tech</p>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
